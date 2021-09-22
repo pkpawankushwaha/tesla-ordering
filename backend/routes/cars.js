@@ -41,7 +41,7 @@ router.post("/car",async (req,res)=>{
         toSend.data=data
         res.send(toSend)
     }).catch((err)=>{
-        console.log("Error");
+        console.log("Error"+err);
         res.send(toSend);
     })
     
